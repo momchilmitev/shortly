@@ -18,6 +18,9 @@ module.exports = {
         light: '#9E9AA8',
         lighter: '#EFF1F7',
       },
+      withe: {
+        DEFAULT: '#ffffff',
+      },
     },
   },
   variants: {
