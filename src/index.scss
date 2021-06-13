@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.btn--primary {
+  display: inline-block;
+  padding: 12px 0;
+  width: 279px;
+  background: #2bd0d0;
+  border-radius: 28px;
+}
