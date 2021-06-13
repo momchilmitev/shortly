@@ -1,24 +1,42 @@
-// .hero {
-//   &__title {
-//     font-style: normal;
-//     font-weight: bold;
-//     font-size: 42px;
-//     line-height: 48px;
-//     text-align: center;
-//     letter-spacing: -1.05px;
-//     color: #34313d;
-//   }
+.hero {
+  margin: 23px 24px 168px;
 
-//   &__description {
-//     font-style: normal;
-// font-weight: 500;
-// font-size: 18px;
-// line-height: 30px;
-// /* or 167% */
+  &__img {
+    width: 511px;
+    height: 337px;
+  }
 
-// text-align: center;
-// letter-spacing: 0.122727px;
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -1.05px;
+    color: #34313d;
+    margin-top: 37px;
+    margin-bottom: 15px;
+  }
 
-// color: #9E9AA8;
-//   }
-// }
+  &__description {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.122727px;
+    color: #9e9aa8;
+    margin-bottom: 32px;
+  }
+
+  &__cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__cta > .btn--primary {
+    width: 197px;
+    margin-bottom: 0;
+  }
+}
