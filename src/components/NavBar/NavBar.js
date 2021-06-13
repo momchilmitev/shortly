@@ -35,7 +35,12 @@ const NavBar = () => {
           <button className="btn btn--primary">Sign Up</button>
         </section>
       </section>
-      <img onClick={toggleNav} src={hamburger} alt="mobile navigation icon" />
+      <img
+        className="navigation__icon"
+        onClick={toggleNav}
+        src={hamburger}
+        alt="mobile navigation icon"
+      />
     </nav>
   );
 };
