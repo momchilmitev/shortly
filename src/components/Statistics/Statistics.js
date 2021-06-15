@@ -1,4 +1,5 @@
 import './Statistics.scss';
+import StatisticCard from '../StatisticCard/StatisticCard';
 
 const Statistics = () => {
   return (
