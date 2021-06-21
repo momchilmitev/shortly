@@ -1,5 +1,7 @@
 .hero {
-  margin: 23px 24px 168px;
+  padding: 23px 24px 168px;
+  overflow-x: hidden;
+  box-sizing: border-box;
 
   &__img {
     width: 511px;

@@ -38,6 +38,7 @@ const Statistics = () => {
         <section className="statistics__cards">
           {state.map(({ icon, title, description }) => (
             <StatisticCard
+              key={title}
               icon={icon}
               title={title}
               description={description}

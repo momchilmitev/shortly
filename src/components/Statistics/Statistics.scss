@@ -1,0 +1,32 @@
+.statistics {
+  background-color: #eff1f7;
+  padding-top: 160px;
+
+  &__container {
+    width: 327px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -0.7px;
+    color: #34313d;
+    margin-bottom: 16px;
+  }
+
+  &__description {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.109091px;
+    color: #9e9aa8;
+    margin-bottom: 92px;
+    padding: 0 10px;
+  }
+}
