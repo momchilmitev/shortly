@@ -1,6 +1,7 @@
 .statistics {
   background-color: #eff1f7;
   padding-top: 160px;
+  padding-bottom: 92px;
 
   &__container {
     width: 327px;
@@ -29,4 +30,20 @@
     margin-bottom: 92px;
     padding: 0 10px;
   }
+
+  &__cards {
+    position: relative;
+    z-index: 0;
+  }
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  height: 99%;
+  width: 8px;
+  background-color: #2bd0d0;
 }
