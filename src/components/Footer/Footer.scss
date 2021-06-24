@@ -1,4 +1,41 @@
 .footer {
   background-color: #232127;
   text-align: center;
+  color: #fff;
+
+  &__logo {
+    padding: 54px 0;
+  }
+
+  &__navigation {
+    padding-bottom: 40px;
+  }
+
+  &__header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    padding-bottom: 22px;
+  }
+
+  &__link {
+    list-style: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.234375px;
+    color: #bfbfbf;
+    padding-bottom: 10px;
+  }
+
+  &__socials {
+    padding-bottom: 56px;
+
+    & > img:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
 }
