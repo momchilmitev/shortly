@@ -12,16 +12,19 @@ const Footer = () => {
         <img src={logo} alt="app logo" />
       </section>
       <nav className="footer__navigation--features">
+        <h4 className="footer__header">Features</h4>
         <li className="footer__link">Link Shortening</li>
         <li className="footer__link">Branded Links</li>
         <li className="footer__link">Analytics</li>
       </nav>
       <nav className="footer__navigation--resources">
+        <h4 className="footer__header">Resources</h4>
         <li className="footer__link">Blog</li>
         <li className="footer__link">Developers</li>
         <li className="footer__link">Support</li>
       </nav>
       <nav className="footer__navigation--company">
+        <h4 className="footer__header">Company</h4>
         <li className="footer__link">About</li>
         <li className="footer__link">Our Team</li>
         <li className="footer__link">Careers</li>
