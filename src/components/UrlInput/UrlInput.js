@@ -3,8 +3,8 @@ import ShortenUrlList from "../ShortenUrlList/ShortenUrlList";
 
 const UrlInput = () => {
     return (
-        <section className="shorten__form">
-            <form>
+        <section className="shorten__container">
+            <form className="shorten__form">
                 <input className="shorten__input" type="text" placeholder="Shorten a link here..."/>
                 <button className="shorten__btn">Shorten It!</button>
             </form>
