@@ -1,12 +1,13 @@
 import './ShortenUrlList.scss';
-import ShortenUrl from "../ShortenUrl/ShortenUrl";
+import ShortenUrl from '../ShortenUrl/ShortenUrl';
 
-const ShortenUrlList = ({urls}) => {
-    return(
-        <ul className="url__list">
-            <ShortenUrl />
-        </ul>
-    )
-}
+const ShortenUrlList = ({ urls }) => {
+	return (
+		<ul className="url__list">
+			<ShortenUrl />
+			<ShortenUrl />
+		</ul>
+	);
+};
 
-export default  ShortenUrlList;
+export default ShortenUrlList;
