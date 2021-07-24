@@ -4,8 +4,9 @@ import ShortenUrl from '../ShortenUrl/ShortenUrl';
 const ShortenUrlList = ({ urls }) => {
 	return (
 		<ul className="url__list">
-			<ShortenUrl />
-			<ShortenUrl />
+			{urls.map((url) => (
+				<ShortenUrl key={url.shortUrl} url={url} />
+			))}
 		</ul>
 	);
 };

@@ -1,12 +1,13 @@
 import './ShortenUrl.scss';
 import { useState } from 'react';
 
-const ShortenUrl = ({ url, shortUrl }) => {
+const ShortenUrl = ({ url }) => {
 	const [text, setText] = useState('Copy');
+	console.log(url);
 	return (
 		<li className="url__container">
-			<p className="url__long">https://www.frontendmentor.io</p>
-			<p className="url__short">https://rel.ink/k4lKyk</p>
+			<p className="url__long">{url.shortUrl}</p>
+			<p className="url__short">{url.originalUrl}</p>
 			<button className="url__btn">{text}</button>
 		</li>
 	);
