@@ -5,9 +5,13 @@ import ShortenUrlList from '../ShortenUrlList/ShortenUrlList';
 const UrlInput = () => {
 	const [url, setUrl] = useState('');
 	const [urls, setUrls] = useState([]);
+	const [loading, setLoading] = useState(false);
+
+	const btnClass = loading ? 'shorten__btn loading' : 'shorten__btn';
 
 	const getShortUrl = (e) => {
 		e.preventDefault();
+		setLoading(true);
 		const apiUrl = `https://api.shrtco.de/v2/shorten?url=${url}`;
 		fetch(apiUrl)
 			.then((res) => res.json())
@@ -18,6 +22,7 @@ const UrlInput = () => {
 				};
 
 				setUrls([...urls, readyUrl]);
+				setLoading(false);
 			});
 	};
 
@@ -30,7 +35,9 @@ const UrlInput = () => {
 					placeholder="Shorten a link here..."
 					onChange={(e) => setUrl(e.target.value)}
 				/>
-				<button className="shorten__btn">Shorten It!</button>
+				<button className={btnClass}>
+					{loading ? 'Shortening...' : 'Shorten It!'}
+				</button>
 			</form>
 			<ShortenUrlList urls={urls} />
 		</section>
