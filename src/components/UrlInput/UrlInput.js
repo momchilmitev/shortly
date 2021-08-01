@@ -6,11 +6,21 @@ const UrlInput = () => {
 	const [url, setUrl] = useState('');
 	const [urls, setUrls] = useState([]);
 	const [loading, setLoading] = useState(false);
+	const [error, setError] = useState('');
 
 	const btnClass = loading ? 'shorten__btn loading' : 'shorten__btn';
 
+	const onInputChange = (e) => {
+		setUrl(e.target.value);
+		setError('');
+	};
+
 	const getShortUrl = (e) => {
 		e.preventDefault();
+		if (!url.trim()) {
+			setError('Please add link!');
+			return;
+		}
 		setLoading(true);
 		const apiUrl = `https://api.shrtco.de/v2/shorten?url=${url}`;
 		fetch(apiUrl)
@@ -33,8 +43,9 @@ const UrlInput = () => {
 					className="shorten__input"
 					type="text"
 					placeholder="Shorten a link here..."
-					onChange={(e) => setUrl(e.target.value)}
+					onChange={(e) => onInputChange(e)}
 				/>
+				{error && <span className="error-msg">{error}</span>}
 				<button className={btnClass}>
 					{loading ? 'Shortening...' : 'Shorten It!'}
 				</button>
