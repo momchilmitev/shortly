@@ -51,3 +51,11 @@
 	margin-bottom: 10px;
 	margin-top: -13px;
 }
+
+@media (min-width: 768px) {
+	.shorten {
+		&__container {
+			margin-top: 0;
+		}
+	}
+}
