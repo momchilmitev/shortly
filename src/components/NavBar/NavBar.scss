@@ -55,6 +55,8 @@
 
 @media (min-width: 768px) {
 	.navigation {
+		max-width: 1100px;
+		margin: 0 auto;
 		align-items: center;
 
 		&__icon {
