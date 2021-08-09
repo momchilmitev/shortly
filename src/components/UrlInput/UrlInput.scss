@@ -55,7 +55,23 @@
 @media (min-width: 768px) {
 	.shorten {
 		&__container {
-			margin-top: 0;
+			max-width: 1100px;
+			margin: -245px auto 0;
+		}
+
+		&__form {
+			flex-direction: row;
+			padding: 52px 65px;
+		}
+
+		&__input {
+			margin: 0 24px 0 0;
+			flex: 3;
+		}
+
+		&__btn {
+			padding: 18px 40px;
+			cursor: pointer;
 		}
 	}
 }
