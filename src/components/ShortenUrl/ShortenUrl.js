@@ -12,8 +12,8 @@ const ShortenUrl = ({ url }) => {
 
 	return (
 		<li className="url__container">
-			<p className="url__long">{url.shortUrl}</p>
-			<p className="url__short">{url.originalUrl}</p>
+			<p className="url__long">{url.originalUrl}</p>
+			<p className="url__short">{url.shortUrl}</p>
 			<button onClick={copyShortUrlToClipboard} className={btnClass}>
 				{text}
 			</button>
