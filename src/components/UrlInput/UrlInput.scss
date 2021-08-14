@@ -74,6 +74,10 @@
 		&__btn {
 			padding: 18px 40px;
 			cursor: pointer;
+
+			&:hover {
+				background: #9ae3e3;
+			}
 		}
 	}
 

@@ -38,6 +38,14 @@
 			margin-right: 24px;
 		}
 	}
+
+	&__social {
+		fill: #fff;
+
+		&:not(&:last-child) {
+			margin-right: 24px;
+		}
+	}
 }
 
 @media (min-width: 768px) {
@@ -58,6 +66,18 @@
 
 		&__link {
 			margin-bottom: 5px;
+
+			&:hover {
+				color: #2bd0d0;
+				cursor: pointer;
+			}
+		}
+
+		&__social {
+			&:hover {
+				cursor: pointer;
+				fill: #2bd0d0;
+			}
 		}
 	}
 }
