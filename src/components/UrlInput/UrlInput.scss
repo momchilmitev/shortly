@@ -50,6 +50,7 @@
 	display: inline-block;
 	margin-bottom: 10px;
 	margin-top: -13px;
+	font-style: italic;
 }
 
 @media (min-width: 768px) {
@@ -60,6 +61,7 @@
 		}
 
 		&__form {
+			position: relative;
 			flex-direction: row;
 			padding: 52px 65px;
 		}
@@ -73,5 +75,11 @@
 			padding: 18px 40px;
 			cursor: pointer;
 		}
+	}
+
+	.error-msg {
+		position: absolute;
+		left: 65px;
+		top: 85%;
 	}
 }
